@@ -1,0 +1,666 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+        .configBlock {
+            background-color: cadetblue;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="out"></div>
+    <script type="text/javascript">
+        var data = {
+         "name":  "sitecore",
+         "children":  [
+                     {
+                         "name":  "<sc.variable name='dataFolder' >",
+                         "size":  154
+                     },
+                     {
+                         "name":  "<sc.variable name='mediaFolder' >",
+                         "size":  50
+                     },
+                     {
+                         "name":  "<sc.variable name='tempFolder' >",
+                         "size":  47
+                     },
+                     {
+                         "name":  "<prototypes name='prototypes' >",
+                         "size":  192
+                     },
+                     {
+                         "name":  "<events name='events' >",
+                         "size":  25767
+                     },
+                     {
+                         "name":  "<eventSettings name='eventSettings' >",
+                         "size":  2146
+                     },
+                     {
+                         "name":  "<eventing name='eventing' >",
+                         "size":  989
+                     },
+                     {
+                         "name":  "<customHandlers name='customHandlers' >",
+                         "size":  1207
+                     },
+                     {
+                         "name":  "<LinkDatabase name='LinkDatabase' >",
+                         "size":  136
+                     },
+                     {
+                         "name":  "<TaskDatabase name='TaskDatabase' >",
+                         "size":  136
+                     },
+                     {
+                         "name":  "<IDTable name='IDTable' >",
+                         "size":  183
+                     },
+                     {
+                         "name":  "<pipelines name='pipelines' >",
+                         "size":  266118
+                     },
+                     {
+                         "name":  "<retryer name='retryer' >",
+                         "size":  268
+                     },
+                     {
+                         "name":  "<dataApis name='dataApis' >",
+                         "size":  212
+                     },
+                     {
+                         "name":  "<dataProviders name='dataProviders' >",
+                         "size":  1285
+                     },
+                     {
+                         "name":  "<proxyDataProviders name='proxyDataProviders' >",
+                         "size":  183
+                     },
+                     {
+                         "name":  "<workflowHistoryStores name='workflowHistoryStores' >",
+                         "size":  167
+                     },
+                     {
+                         "name":  "<databases name='databases' >",
+                         "size":  11086
+                     },
+                     {
+                         "name":  "<archives name='archives' >",
+                         "size":  188
+                     },
+                     {
+                         "name":  "<search name='search' >",
+                         "size":  2230
+                     },
+                     {
+                         "name":  "<authentication name='authentication' >",
+                         "size":  194
+                     },
+                     {
+                         "name":  "<httpAuthentication name='httpAuthentication' >",
+                         "size":  372
+                     },
+                     {
+                         "name":  "<userManager name='userManager' >",
+                         "size":  186
+                     },
+                     {
+                         "name":  "<rolesInRolesManager name='rolesInRolesManager' >",
+                         "size":  328
+                     },
+                     {
+                         "name":  "<authorization name='authorization' >",
+                         "size":  483
+                     },
+                     {
+                         "name":  "<accessRights name='accessRights' >",
+                         "size":  4160
+                     },
+                     {
+                         "name":  "<presentationManager name='presentationManager' >",
+                         "size":  199
+                     },
+                     {
+                         "name":  "<controlManager name='controlManager' >",
+                         "size":  190
+                     },
+                     {
+                         "name":  "<publishManager name='publishManager' >",
+                         "size":  196
+                     },
+                     {
+                         "name":  "<previewManager name='previewManager' >",
+                         "size":  188
+                     },
+                     {
+                         "name":  "<configStores name='configStores' >",
+                         "size":  349
+                     },
+                     {
+                         "name":  "<itemManager name='itemManager' >",
+                         "size":  167
+                     },
+                     {
+                         "name":  "<templateManager name='templateManager' >",
+                         "size":  179
+                     },
+                     {
+                         "name":  "<domainManager name='domainManager' >",
+                         "size":  953
+                     },
+                     {
+                         "name":  "<switchingProviders name='switchingProviders' >",
+                         "size":  408
+                     },
+                     {
+                         "name":  "<mediaPath name='mediaPath' >",
+                         "size":  170
+                     },
+                     {
+                         "name":  "<siteManager name='siteManager' >",
+                         "size":  933
+                     },
+                     {
+                         "name":  "<SACauthorization name='SACauthorization' >",
+                         "size":  194
+                     },
+                     {
+                         "name":  "<linkManager name='linkManager' >",
+                         "size":  541
+                     },
+                     {
+                         "name":  "<standardValues name='standardValues' >",
+                         "size":  176
+                     },
+                     {
+                         "name":  "<languageFallbackFieldValues name='languageFallbackFieldValues' >",
+                         "size":  329
+                     },
+                     {
+                         "name":  "<fieldTypes name='fieldTypes' >",
+                         "size":  5459
+                     },
+                     {
+                         "name":  "<clientDataStore name='clientDataStore' >",
+                         "size":  191
+                     },
+                     {
+                         "name":  "<hooks name='hooks' >",
+                         "size":  4139
+                     },
+                     {
+                         "name":  "<scheduling name='scheduling' >",
+                         "size":  8556
+                     },
+                     {
+                         "name":  "<processors name='processors' >",
+                         "size":  21279
+                     },
+                     {
+                         "name":  "<renderingControls name='renderingControls' >",
+                         "size":  913
+                     },
+                     {
+                         "name":  "<dataviews name='dataviews' >",
+                         "size":  594
+                     },
+                     {
+                         "name":  "<pageextenders name='pageextenders' >",
+                         "size":  888
+                     },
+                     {
+                         "name":  "<xslExtensions name='xslExtensions' >",
+                         "size":  1108
+                     },
+                     {
+                         "name":  "<xslControls name='xslControls' >",
+                         "size":  1323
+                     },
+                     {
+                         "name":  "<controlSources name='controlSources' >",
+                         "size":  2112
+                     },
+                     {
+                         "name":  "<ui name='ui' >",
+                         "size":  2391
+                     },
+                     {
+                         "name":  "<xamlsharp name='xamlsharp' >",
+                         "size":  22802
+                     },
+                     {
+                         "name":  "<languageDefinitions name='languageDefinitions' >",
+                         "size":  16415
+                     },
+                     {
+                         "name":  "<clientscripts name='clientscripts' >",
+                         "size":  58
+                     },
+                     {
+                         "name":  "<replacers name='replacers' >",
+                         "size":  403
+                     },
+                     {
+                         "name":  "<encodeNameReplacements name='encodeNameReplacements' >",
+                         "size":  399
+                     },
+                     {
+                         "name":  "<sites name='sites' >",
+                         "size":  3773
+                     },
+                     {
+                         "name":  "<cacheSizes name='cacheSizes' >",
+                         "size":  137
+                     },
+                     {
+                         "name":  "<mediaLibrary name='mediaLibrary' >",
+                         "size":  28667
+                     },
+                     {
+                         "name":  "<rendering name='rendering' >",
+                         "size":  408
+                     },
+                     {
+                         "name":  "<commands name='commands' >",
+                         "size":  69235
+                     },
+                     {
+                         "name":  "<icons name='icons' >",
+                         "size":  4248
+                     },
+                     {
+                         "name":  "<portraits name='portraits' >",
+                         "size":  605
+                     },
+                     {
+                         "name":  "<publishing name='publishing' >",
+                         "size":  310
+                     },
+                     {
+                         "name":  "<watchers name='watchers' >",
+                         "size":  334
+                     },
+                     {
+                         "name":  "<log4net name='log4net' >",
+                         "size":  4970
+                     },
+                     {
+                         "name":  "<settings name='settings' >",
+                         "size":  204838
+                     },
+                     {
+                         "name":  "<tracking name='tracking' >",
+                         "size":  2585
+                     },
+                     {
+                         "name":  "<serviceProviderBuilder name='serviceProviderBuilder' >",
+                         "size":  109
+                     },
+                     {
+                         "name":  "<compatibility name='compatibility' >",
+                         "size":  1274
+                     },
+                     {
+                         "name":  "<interactionRegistry name='interactionRegistry' >",
+                         "size":  278
+                     },
+                     {
+                         "name":  "<contactRepository name='contactRepository' >",
+                         "size":  202
+                     },
+                     {
+                         "name":  "<behaviorProfileConverter name='behaviorProfileConverter' >",
+                         "size":  217
+                     },
+                     {
+                         "name":  "<dataAdapterManager name='dataAdapterManager' >",
+                         "size":  345
+                     },
+                     {
+                         "name":  "<maintenanceService name='maintenanceService' >",
+                         "size":  431
+                     },
+                     {
+                         "name":  "<coreServices name='coreServices' >",
+                         "size":  422
+                     },
+                     {
+                         "name":  "<lookupManager name='lookupManager' >",
+                         "size":  339
+                     },
+                     {
+                         "name":  "<geoIpManager name='geoIpManager' >",
+                         "size":  503
+                     },
+                     {
+                         "name":  "<marketingDefinitions name='marketingDefinitions' >",
+                         "size":  28798
+                     },
+                     {
+                         "name":  "<taxonomy name='taxonomy' >",
+                         "size":  7931
+                     },
+                     {
+                         "name":  "<analyticsExcludeRobots name='analyticsExcludeRobots' >",
+                         "size":  27525
+                     },
+                     {
+                         "name":  "<model name='model' >",
+                         "size":  6424
+                     },
+                     {
+                         "name":  "<mongo name='mongo' >",
+                         "size":  330
+                     },
+                     {
+                         "name":  "<outcome name='outcome' >",
+                         "size":  426
+                     },
+                     {
+                         "name":  "<aggregation name='aggregation' >",
+                         "size":  24674
+                     },
+                     {
+                         "name":  "<aggregationProcessing name='aggregationProcessing' >",
+                         "size":  2223
+                     },
+                     {
+                         "name":  "<processing name='processing' >",
+                         "size":  5163
+                     },
+                     {
+                         "name":  "<dataAdapterManager.reporting name='dataAdapterManager.reporting' >",
+                         "size":  367
+                     },
+                     {
+                         "name":  "<reporting name='reporting' >",
+                         "size":  2031
+                     },
+                     {
+                         "name":  "<reportManager name='reportManager' >",
+                         "size":  308
+                     },
+                     {
+                         "name":  "<sessionSerialization name='sessionSerialization' >",
+                         "size":  19888
+                     },
+                     {
+                         "name":  "<submitQueue name='submitQueue' >",
+                         "size":  542
+                     },
+                     {
+                         "name":  "<AntiCsrf name='AntiCsrf' >",
+                         "size":  3146
+                     },
+                     {
+                         "name":  "<bucketManager name='bucketManager' >",
+                         "size":  293
+                     },
+                     {
+                         "name":  "<entityFactory name='entityFactory' >",
+                         "size":  195
+                     },
+                     {
+                         "name":  "<eaPlanProvider name='eaPlanProvider' >",
+                         "size":  198
+                     },
+                     {
+                         "name":  "<contactFactory name='contactFactory' >",
+                         "size":  175
+                     },
+                     {
+                         "name":  "<itemClassificationService name='itemClassificationService' >",
+                         "size":  219
+                     },
+                     {
+                         "name":  "<commerceContext name='commerceContext' >",
+                         "size":  182
+                     },
+                     {
+                         "name":  "<shopProvider name='shopProvider' >",
+                         "size":  194
+                     },
+                     {
+                         "name":  "<authenticationTokenProvider name='authenticationTokenProvider' >",
+                         "size":  224
+                     },
+                     {
+                         "name":  "<commerce.Entities name='commerce.Entities' >",
+                         "size":  442
+                     },
+                     {
+                         "name":  "<commerce.analyticsData name='commerce.analyticsData' >",
+                         "size":  4756
+                     },
+                     {
+                         "name":  "<commerce.outcomeData name='commerce.outcomeData' >",
+                         "size":  354
+                     },
+                     {
+                         "name":  "<commerce-experienceAnalytics name='commerce-experienceAnalytics' >",
+                         "size":  309
+                     },
+                     {
+                         "name":  "<experienceAnalytics name='experienceAnalytics' >",
+                         "size":  60573
+                     },
+                     {
+                         "name":  "<boostingManager name='boostingManager' >",
+                         "size":  317
+                     },
+                     {
+                         "name":  "<searchManager name='searchManager' >",
+                         "size":  302
+                     },
+                     {
+                         "name":  "<contentSearch name='contentSearch' >",
+                         "size":  135834
+                     },
+                     {
+                         "name":  "<automation name='automation' >",
+                         "size":  532
+                     },
+                     {
+                         "name":  "<automationManager name='automationManager' >",
+                         "size":  383
+                     },
+                     {
+                         "name":  "<automationWorker name='automationWorker' >",
+                         "size":  367
+                     },
+                     {
+                         "name":  "<appDependencies name='appDependencies' >",
+                         "size":  1172
+                     },
+                     {
+                         "name":  "<overrideXmlControls name='overrideXmlControls' >",
+                         "size":  462
+                     },
+                     {
+                         "name":  "<sitecore.experienceeditor.speak.requests name='sitecore.experienceeditor.speak.requests' >",
+                         "size":  32333
+                     },
+                     {
+                         "name":  "<interning name='interning' >",
+                         "size":  1431
+                     },
+                     {
+                         "name":  "<cryptographyManager name='cryptographyManager' >",
+                         "size":  288
+                     },
+                     {
+                         "name":  "<itemWebApi name='itemWebApi' >",
+                         "size":  851
+                     },
+                     {
+                         "name":  "<jsnlog name='jsnlog' >",
+                         "size":  4677
+                     },
+                     {
+                         "name":  "<marketingDefinitionSearch name='marketingDefinitionSearch' >",
+                         "size":  31863
+                     },
+                     {
+                         "name":  "<mvc name='mvc' >",
+                         "size":  5894
+                     },
+                     {
+                         "name":  "<pathAnalyzer name='pathAnalyzer' >",
+                         "size":  13276
+                     },
+                     {
+                         "name":  "<controllers name='controllers' >",
+                         "size":  2768
+                     },
+                     {
+                         "name":  "<api name='api' >",
+                         "size":  15887
+                     },
+                     {
+                         "name":  "<services name='services' >",
+                         "size":  275
+                     },
+                     {
+                         "name":  "<overrideDialogs name='overrideDialogs' >",
+                         "size":  844
+                     },
+                     {
+                         "name":  "<speak name='speak' >",
+                         "size":  95
+                     },
+                     {
+                         "name":  "<sc.variable name='webDAVPrefix' >",
+                         "size":  146
+                     },
+                     {
+                         "name":  "<webdav name='webdav' >",
+                         "size":  1263
+                     },
+                     {
+                         "name":  "<deviceDetectionManager name='deviceDetectionManager' >",
+                         "size":  352
+                     },
+                     {
+                         "name":  "<GeoIpWebRequestFactory name='GeoIpWebRequestFactory' >",
+                         "size":  197
+                     },
+                     {
+                         "name":  "<GeoIpWebClient name='GeoIpWebClient' >",
+                         "size":  234
+                     },
+                     {
+                         "name":  "<GeoIpResponseParser name='GeoIpResponseParser' >",
+                         "size":  201
+                     },
+                     {
+                         "name":  "<GeoIpConnector name='GeoIpConnector' >",
+                         "size":  394
+                     },
+                     {
+                         "name":  "<LegacyLocationSource name='LegacyLocationSource' >",
+                         "size":  248
+                     },
+                     {
+                         "name":  "<contentTesting name='contentTesting' >",
+                         "size":  2863
+                     },
+                     {
+                         "name":  "<emailTemplateCreators name='emailTemplateCreators' >",
+                         "size":  876
+                     },
+                     {
+                         "name":  "<forceWinnerBehaviors name='forceWinnerBehaviors' >",
+                         "size":  410
+                     },
+                     {
+                         "name":  "<algorithms name='algorithms' >",
+                         "size":  327
+                     },
+                     {
+                         "name":  "<experienceProfile name='experienceProfile' >",
+                         "size":  7840
+                     },
+                     {
+                         "name":  "<bundling name='bundling' >",
+                         "size":  265
+                     },
+                     {
+                         "name":  "<contactListManager name='contactListManager' >",
+                         "size":  306
+                     },
+                     {
+                         "name":  "<segmentedListManager name='segmentedListManager' >",
+                         "size":  314
+                     },
+                     {
+                         "name":  "<contactListStore name='contactListStore' >",
+                         "size":  238
+                     },
+                     {
+                         "name":  "<lockRepository name='lockRepository' >",
+                         "size":  343
+                     },
+                     {
+                         "name":  "<useRepository name='useRepository' >",
+                         "size":  343
+                     },
+                     {
+                         "name":  "<segmentedListStore name='segmentedListStore' >",
+                         "size":  242
+                     },
+                     {
+                         "name":  "<processContactsDataProvider name='processContactsDataProvider' >",
+                         "size":  599
+                     },
+                     {
+                         "name":  "<contactProcessingProvider name='contactProcessingProvider' >",
+                         "size":  593
+                     },
+                     {
+                         "name":  "<csvReader name='csvReader' >",
+                         "size":  203
+                     },
+                     {
+                         "name":  "<import name='import' >",
+                         "size":  1396
+                     },
+                     {
+                         "name":  "<ruleEngine name='ruleEngine' >",
+                         "size":  383
+                     },
+                     {
+                         "name":  "<listManagementSearch name='listManagementSearch' >",
+                         "size":  7100
+                     },
+                     {
+                         "name":  "<social name='social' >",
+                         "size":  45063
+                     }
+                 ]
+        }
+
+        function htmlEntities(str) {
+           return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        function compareRecordsAsc(a, b) {
+            return a.size - b.size;
+        }
+
+        var dataset = data.children;
+
+        $.each(dataset.sort(compareRecordsAsc), function(i, item) {
+            size = Math.round(Math.sqrt(item.size))*3;
+            div = $("#out").add("<div class='configBlock'>" + htmlEntities(item.name) + "</div>")
+               .css("width", size)
+               .css("height", size)
+               .css("margin", "1px");
+            $("#out").append(div);
+        });
+
+    </script>
+
+</body>
+</html>
